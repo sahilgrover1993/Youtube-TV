@@ -1,5 +1,8 @@
 # YoutubeTV
+**Notice: Youtube API version 2 has been discontinued as of April 20th 2015**
+
 A small, slick, library independent YouTube User/Playlist player
+
 
 <img src="./demos/assets/images/default.png">
 
@@ -22,29 +25,6 @@ A small, slick, library independent YouTube User/Playlist player
 * [jQuery Support](http://giorgio003.github.io/Youtube-TV/demos/jquery.html)
 * [Responsive Support](http://giorgio003.github.io/Youtube-TV/demos/responsive.html)
 * [Multiple Players](http://giorgio003.github.io/Youtube-TV/demos/multiplayer.html)
-
-## To-do list @Giorgio003
-
-- [x] Implement Responsive Design :iphone:
-- [x] Add additional colour scheme to match Youtube `light` player
-- [x] Create modular settings for responsiveness and themes
-- [x] Allow multiple players
-- [x] Merge remaining pending pull requests from Original
-- [ ] Update documentation (ongoing)
-
-#### Youtube API v3
-- [ ] Convert to Youtube API v3 !important
-- [ ] v3 pageToken - pages + full list (snowliondev)
-
-#### Additional
-- [ ] Allow local testing (flag `http:` when testing locally)
-- [ ] FAQ/Fix common issues (Empty playlists, no uploads, etc.)
-- [ ] Load order, newest, random/shuffle.
-- [ ] Additional themes (or modular colour scheme)
-- [ ] Different Aspect ratios for responsive (4:3 for larger playist column)
-- [ ] Test IE 8-10 (Low Priority unless requested)
-- [ ] Obtain More Coffee :coffee:
-- [ ] Any other suggestions welcome! :smiley:
 
 ## Installation
 
@@ -177,8 +157,3 @@ $('#frame').ytv({opts});
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
-
-
-## Share Meh!
-<a href="https://twitter.com/intent/tweet?hashtags=youtubetv&via=jakiestfu&url=https%3A%2F%2Fgithub.com%2Fjakiestfu%2FYoutube-TV%2F&text=Youtube%20TV%3A%20A%20small%2C%20slick%2C%20library%20independent%20YouTube%20User%2FPlaylist%20player"><img src="./static/twit.png" target="_blank"></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Fjakiestfu%2FYoutube-TV%2F"><img src="./static/fb.png" target="_blank"></a>
