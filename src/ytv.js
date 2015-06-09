@@ -18,7 +18,7 @@
 
 		var noop = function(){},
 			settings = {
-				apiKey:apiKey,
+				apiKey: apiKey,
 				element: null,
 				user: null,
 				channelId: null,
