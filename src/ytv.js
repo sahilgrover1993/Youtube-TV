@@ -13,7 +13,7 @@
 
 (function(win, doc) {
 	'use strict';
-	 var apiKey = 'YOUR_API_KEY_HERE';
+	var apiKey = 'YOUR_API_KEY_HERE';
 	var YTV = YTV || function(id, opts){
 
 		var noop = function(){},
@@ -494,8 +494,8 @@
 			
 			initialize = function(id, opts){
 				utils.deepExtend(settings, opts);
-				if(settings.apiKey.length==0){
-					alert("Missing APIkey in settings or as global vaiable.")
+				if(settings.apiKey.length===0){
+					alert("Missing APIkey in settings or as global vaiable.");
 				}
 				apiKey = settings.apiKey;
 				settings.element = (typeof id==='string') ? doc.getElementById(id) : id;
