@@ -119,7 +119,7 @@
 							fn.call(this, JSON.parse(cache.get(url)));
 						} else {
 							var handle;
-							if (win.XDomainRequest) { // Proper CORS for IE8,9
+							if (win.XDomainRequest && !(navigator.appVersion.indexOf("MSIE 8")==-1 || navigator.appVersion.indexOf("MSIE 9")==-1)) { // CORS for IE8,9
 								handle = new XDomainRequest();
 								handle.onload = function(){
 									cache.set(url, handle.responseText);
