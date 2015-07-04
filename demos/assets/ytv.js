@@ -6,7 +6,7 @@
  * http://opensource.org/licenses/MIT
  *
  * Github:  
- * Version: 3.0.4
+ * Version: 3.0.5
  */
 /*jslint browser: true, undef:true, unused:true, laxbreak:true, loopfunc:true*/
 /*global define, module, ender */
@@ -18,6 +18,7 @@
 
 		var noop = function(){},
 			settings = {
+				apiKey: apiKey,
 				element: null,
 				user: null,
 				channelId: null,
@@ -118,7 +119,7 @@
 							fn.call(this, JSON.parse(cache.get(url)));
 						} else {
 							var handle;
-							if (win.XDomainRequest) { // Proper CORS for IE8,9
+							if (win.XDomainRequest && !(navigator.appVersion.indexOf("MSIE 8")==-1 || navigator.appVersion.indexOf("MSIE 9")==-1)) { // CORS for IE8,9
 								handle = new XDomainRequest();
 								handle.onload = function(){
 									cache.set(url, handle.responseText);
@@ -493,6 +494,10 @@
 			
 			initialize = function(id, opts){
 				utils.deepExtend(settings, opts);
+				if(settings.apiKey.length===0){
+					alert("Missing APIkey in settings or as global vaiable.");
+				}
+				apiKey = settings.apiKey;
 				settings.element = (typeof id==='string') ? doc.getElementById(id) : id;
 				if(settings.element && (settings.user || settings.channelId || settings.playlist)){
 					prepare.youtube();
